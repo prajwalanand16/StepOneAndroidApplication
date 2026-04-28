@@ -21,7 +21,10 @@ import com.stepone.util.Constants
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DashboardScreen(onRemoveAdsClicked: () -> Unit = {}) {
+fun DashboardScreen(
+    isPro: Boolean = false,
+    onRemoveAdsClicked: () -> Unit = {}
+) {
     val steps by StepCounterService.stepsFlow.collectAsState()
     val milestone = Constants.getMilestoneForSteps(steps)
     val progress = steps.toFloat() / Constants.STEP_GOAL
@@ -49,7 +52,10 @@ fun DashboardScreen(onRemoveAdsClicked: () -> Unit = {}) {
                 sheetState = sheetState,
                 containerColor = Color(0xFF1E293B) // Dark background
             ) {
-                SettingsContent(onRemoveAdsClicked = onRemoveAdsClicked)
+                SettingsContent(
+                    isPro = isPro,
+                    onRemoveAdsClicked = onRemoveAdsClicked
+                )
             }
         }
 
@@ -58,9 +64,10 @@ fun DashboardScreen(onRemoveAdsClicked: () -> Unit = {}) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+            val context = androidx.compose.ui.platform.LocalContext.current
             // Debug button for simulation
             Button(
-                onClick = { StepCounterService.stepsFlow.value += 500 },
+                onClick = { StepCounterService.addSteps(context, 500) },
                 modifier = Modifier.padding(bottom = 16.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.1f))
             ) {
@@ -109,7 +116,10 @@ fun DashboardScreen(onRemoveAdsClicked: () -> Unit = {}) {
 }
 
 @Composable
-fun SettingsContent(onRemoveAdsClicked: () -> Unit = {}) {
+fun SettingsContent(
+    isPro: Boolean = false,
+    onRemoveAdsClicked: () -> Unit = {}
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -124,18 +134,31 @@ fun SettingsContent(onRemoveAdsClicked: () -> Unit = {}) {
         )
         Spacer(modifier = Modifier.height(32.dp))
         
-        Button(
-            onClick = onRemoveAdsClicked,
-            modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black)
-        ) {
-            Text("Remove Ads (Go Pro)")
+        if (!isPro) {
+            Button(
+                onClick = onRemoveAdsClicked,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black)
+            ) {
+                Text("Remove Ads (Go Pro)")
+            }
+            Spacer(modifier = Modifier.height(16.dp))
+        } else {
+            Text(
+                text = "Premium Active ✨",
+                color = Color.Cyan,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Medium
+            )
+            Spacer(modifier = Modifier.height(16.dp))
         }
         
-        Spacer(modifier = Modifier.height(16.dp))
-        
+        val context = androidx.compose.ui.platform.LocalContext.current
         OutlinedButton(
-            onClick = { StepCounterService.stepsFlow.value = 0 },
+            onClick = {
+                StepCounterService.stepsFlow.value = 0
+                StepCounterService.addSteps(context, 0) // Trigger persistence
+            },
             modifier = Modifier.fillMaxWidth(),
             border = BorderStroke(1.dp, Color.White.copy(alpha = 0.3f))
         ) {

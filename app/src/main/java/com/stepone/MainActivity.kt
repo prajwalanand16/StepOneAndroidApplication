@@ -17,11 +17,17 @@ import com.razorpay.PaymentResultListener
 import com.stepone.service.StepCounterService
 import com.stepone.ui.screens.DashboardScreen
 import com.stepone.ui.theme.StepOneTheme
+import com.stepone.util.PreferenceManager
 import dagger.hilt.android.AndroidEntryPoint
 import org.json.JSONObject
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity(), PaymentResultListener {
+
+    @Inject
+    lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
@@ -35,7 +41,10 @@ class MainActivity : ComponentActivity(), PaymentResultListener {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DashboardScreen(onRemoveAdsClicked = { startPayment() })
+                    DashboardScreen(
+                        isPro = preferenceManager.isPro(),
+                        onRemoveAdsClicked = { startPayment() }
+                    )
                 }
             }
         }
@@ -67,7 +76,7 @@ class MainActivity : ComponentActivity(), PaymentResultListener {
 
     override fun onPaymentSuccess(razorpayPaymentId: String?) {
         Toast.makeText(this, "Payment Successful: $razorpayPaymentId", Toast.LENGTH_LONG).show()
-        // TODO: Save Pro status in DataStore/SharedPreferences
+        preferenceManager.setPro(true)
     }
 
     override fun onPaymentError(code: Int, response: String?) {

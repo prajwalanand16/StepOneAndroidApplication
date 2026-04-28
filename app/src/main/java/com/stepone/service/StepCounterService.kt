@@ -12,6 +12,8 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import com.stepone.MainActivity
 import com.stepone.R
+import com.stepone.data.StepDao
+import com.stepone.data.StepEntry
 import com.stepone.util.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
@@ -21,11 +23,30 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class StepCounterService : Service(), SensorEventListener {
 
+    @Inject
+    lateinit var stepDao: StepDao
+
     private lateinit var sensorManager: SensorManager
     private var stepSensor: Sensor? = null
-    
+    private val serviceScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+
+    private var initialStepsAtBoot = -1
+    private var currentDay = getCurrentDate()
+
     companion object {
         val stepsFlow = MutableStateFlow(0)
+
+        fun addSteps(context: Context, count: Int) {
+            val intent = Intent(context, StepCounterService::class.java).apply {
+                action = "ACTION_ADD_STEPS"
+                putExtra("EXTRA_COUNT", count)
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                context.startForegroundService(intent)
+            } else {
+                context.startService(intent)
+            }
+        }
     }
 
     override fun onCreate() {
@@ -33,24 +54,73 @@ class StepCounterService : Service(), SensorEventListener {
         createNotificationChannel()
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-        
+
         if (stepSensor != null) {
             sensorManager.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
         }
-        
+
         startForeground(Constants.NOTIFICATION_ID, createNotification(0))
+        loadInitialSteps()
+    }
+
+    private fun loadInitialSteps() {
+        serviceScope.launch {
+            stepDao.getStepsForDate(currentDay).collect { entry ->
+                stepsFlow.value = entry?.steps ?: 0
+                updateNotification(stepsFlow.value)
+            }
+        }
+    }
+
+    private fun getCurrentDate(): String {
+        return java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(java.util.Date())
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        if (intent?.action == "ACTION_ADD_STEPS") {
+            val count = intent.getIntExtra("EXTRA_COUNT", 0)
+            stepsFlow.value += count
+            persistSteps()
+            updateNotification(stepsFlow.value)
+        }
         return START_STICKY
+    }
+
+    private fun persistSteps() {
+        serviceScope.launch {
+            stepDao.insertOrUpdate(StepEntry(currentDay, stepsFlow.value))
+        }
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
         if (event?.sensor?.type == Sensor.TYPE_STEP_COUNTER) {
-            val totalSteps = event.values[0].toInt()
-            // In a real app, we would handle the offset from system boot
-            stepsFlow.value = totalSteps
-            updateNotification(totalSteps)
+            val totalStepsSinceBoot = event.values[0].toInt()
+
+            if (initialStepsAtBoot == -1) {
+                initialStepsAtBoot = totalStepsSinceBoot
+                return
+            }
+
+            if (totalStepsSinceBoot < initialStepsAtBoot) {
+                // System rebooted
+                initialStepsAtBoot = totalStepsSinceBoot
+                return
+            }
+
+            val delta = totalStepsSinceBoot - initialStepsAtBoot
+            if (delta > 0) {
+                initialStepsAtBoot = totalStepsSinceBoot
+
+                val today = getCurrentDate()
+                if (today != currentDay) {
+                    currentDay = today
+                    stepsFlow.value = 0
+                }
+
+                stepsFlow.value += delta
+                persistSteps()
+                updateNotification(stepsFlow.value)
+            }
         }
     }
 

@@ -8,7 +8,14 @@ import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
+import com.google.errorprone.annotations.CanIgnoreReturnValue;
+import com.stepone.data.StepDao;
+import com.stepone.data.StepDatabase;
+import com.stepone.di.DataModule_ProvideDatabaseFactory;
+import com.stepone.di.DataModule_ProvideStepDaoFactory;
 import com.stepone.service.StepCounterService;
+import com.stepone.service.StepCounterService_MembersInjector;
+import com.stepone.util.PreferenceManager;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -23,6 +30,7 @@ import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_Internal
 import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory;
 import dagger.hilt.android.internal.managers.SavedStateHandleHolder;
 import dagger.hilt.android.internal.modules.ApplicationContextModule;
+import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
@@ -50,25 +58,20 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
     return new Builder();
   }
 
-  public static StepOneApp_HiltComponents.SingletonC create() {
-    return new Builder().build();
-  }
-
   public static final class Builder {
+    private ApplicationContextModule applicationContextModule;
+
     private Builder() {
     }
 
-    /**
-     * @deprecated This module is declared, but an instance is not used in the component. This method is a no-op. For more, see https://dagger.dev/unused-modules.
-     */
-    @Deprecated
     public Builder applicationContextModule(ApplicationContextModule applicationContextModule) {
-      Preconditions.checkNotNull(applicationContextModule);
+      this.applicationContextModule = Preconditions.checkNotNull(applicationContextModule);
       return this;
     }
 
     public StepOneApp_HiltComponents.SingletonC build() {
-      return new SingletonCImpl();
+      Preconditions.checkBuilderRequirement(applicationContextModule, ApplicationContextModule.class);
+      return new SingletonCImpl(applicationContextModule);
     }
   }
 
@@ -358,6 +361,7 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
 
     @Override
     public void injectMainActivity(MainActivity mainActivity) {
+      injectMainActivity2(mainActivity);
     }
 
     @Override
@@ -383,6 +387,12 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
     @Override
     public ViewComponentBuilder viewComponentBuilder() {
       return new ViewCBuilder(singletonCImpl, activityRetainedCImpl, activityCImpl);
+    }
+
+    @CanIgnoreReturnValue
+    private MainActivity injectMainActivity2(MainActivity instance) {
+      MainActivity_MembersInjector.injectPreferenceManager(instance, singletonCImpl.preferenceManagerProvider.get());
+      return instance;
     }
   }
 
@@ -483,15 +493,39 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
 
     @Override
     public void injectStepCounterService(StepCounterService stepCounterService) {
+      injectStepCounterService2(stepCounterService);
+    }
+
+    @CanIgnoreReturnValue
+    private StepCounterService injectStepCounterService2(StepCounterService instance) {
+      StepCounterService_MembersInjector.injectStepDao(instance, singletonCImpl.stepDao());
+      return instance;
     }
   }
 
   private static final class SingletonCImpl extends StepOneApp_HiltComponents.SingletonC {
+    private final ApplicationContextModule applicationContextModule;
+
     private final SingletonCImpl singletonCImpl = this;
 
-    private SingletonCImpl() {
+    private dagger.internal.Provider<PreferenceManager> preferenceManagerProvider;
 
+    private dagger.internal.Provider<StepDatabase> provideDatabaseProvider;
 
+    private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
+      this.applicationContextModule = applicationContextModuleParam;
+      initialize(applicationContextModuleParam);
+
+    }
+
+    private StepDao stepDao() {
+      return DataModule_ProvideStepDaoFactory.provideStepDao(provideDatabaseProvider.get());
+    }
+
+    @SuppressWarnings("unchecked")
+    private void initialize(final ApplicationContextModule applicationContextModuleParam) {
+      this.preferenceManagerProvider = DoubleCheck.provider(new SwitchingProvider<PreferenceManager>(singletonCImpl, 0));
+      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<StepDatabase>(singletonCImpl, 1));
     }
 
     @Override
@@ -511,6 +545,31 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
     @Override
     public ServiceComponentBuilder serviceComponentBuilder() {
       return new ServiceCBuilder(singletonCImpl);
+    }
+
+    private static final class SwitchingProvider<T> implements dagger.internal.Provider<T> {
+      private final SingletonCImpl singletonCImpl;
+
+      private final int id;
+
+      SwitchingProvider(SingletonCImpl singletonCImpl, int id) {
+        this.singletonCImpl = singletonCImpl;
+        this.id = id;
+      }
+
+      @SuppressWarnings("unchecked")
+      @Override
+      public T get() {
+        switch (id) {
+          case 0: // com.stepone.util.PreferenceManager 
+          return (T) new PreferenceManager(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 1: // com.stepone.data.StepDatabase 
+          return (T) DataModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          default: throw new AssertionError(id);
+        }
+      }
     }
   }
 }
