@@ -1,0 +1,648 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.stepone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+11-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:6:5-77
+12-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+13-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:7:5-84
+13-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:7:22-81
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:8:5-67
+14-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:25:5-79
+16-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:25:22-76
+17    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+17-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:26:5-79
+17-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:26:22-76
+18    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+18-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:27:5-82
+18-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:27:22-79
+19    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+19-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:28:5-88
+19-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:28:22-85
+20    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" /> <!-- Android package visibility setting -->
+20-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:29:5-83
+20-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:29:22-80
+21    <queries>
+21-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:35:5-51:15
+22
+23        <!-- For browser content -->
+24        <intent>
+24-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:38:9-44:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:13-65
+25-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:21-62
+26
+27            <category android:name="android.intent.category.BROWSABLE" />
+27-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:41:13-74
+27-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:41:23-71
+28
+29            <data android:scheme="https" />
+29-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:13-44
+29-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:19-41
+30        </intent>
+31        <!-- End of browser content -->
+32        <!-- For CustomTabsService -->
+33        <intent>
+33-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:47:9-49:18
+34            <action android:name="android.support.customtabs.action.CustomTabsService" />
+34-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:48:13-90
+34-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:48:21-87
+35        </intent>
+36        <!-- End of CustomTabsService -->
+37        <intent>
+37-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:11:9-17:18
+38            <action android:name="android.intent.action.VIEW" />
+38-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:13-65
+38-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:21-62
+39
+40            <data
+40-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:13-44
+41                android:mimeType="*/*"
+42                android:scheme="*" />
+42-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:19-41
+43        </intent>
+44        <intent>
+44-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:18:9-27:18
+45            <action android:name="android.intent.action.VIEW" />
+45-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:13-65
+45-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:39:21-62
+46
+47            <category android:name="android.intent.category.BROWSABLE" />
+47-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:41:13-74
+47-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:41:23-71
+48
+49            <data
+49-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:13-44
+50                android:host="pay"
+51                android:mimeType="*/*"
+52                android:scheme="upi" />
+52-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:19-41
+53        </intent>
+54        <intent>
+54-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:28:9-30:18
+55            <action android:name="android.intent.action.MAIN" />
+55-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:17-69
+55-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:25-66
+56        </intent>
+57        <intent>
+57-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:31:9-35:18
+58            <action android:name="android.intent.action.SEND" />
+58-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:32:13-65
+58-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:32:21-62
+59
+60            <data android:mimeType="*/*" />
+60-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:43:13-44
+61        </intent>
+62        <intent>
+62-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:36:9-38:18
+63            <action android:name="rzp.device_token.share" />
+63-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:37:13-61
+63-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:37:21-58
+64        </intent>
+65    </queries>
+66
+67    <uses-feature
+67-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+68        android:glEsVersion="0x00020000"
+68-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+69        android:required="true" />
+69-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+70
+71    <uses-permission android:name="android.permission.WAKE_LOCK" />
+71-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/prajwalanand/.gradle/caches/transforms-3/1395785cfd3bace8e760c85632b7c80e/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:5-68
+71-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /Users/prajwalanand/.gradle/caches/transforms-3/1395785cfd3bace8e760c85632b7c80e/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:22-65
+72
+73    <permission
+73-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+74        android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+74-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+75        android:protectionLevel="signature" />
+75-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+76
+77    <uses-permission android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+77-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+77-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+78
+79    <application
+79-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:11:5-51:19
+80        android:name="com.stepone.StepOneApp"
+80-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:12:9-35
+81        android:allowBackup="true"
+81-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:13:9-35
+82        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+82-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+83        android:dataExtractionRules="@xml/data_extraction_rules"
+83-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:14:9-65
+84        android:debuggable="true"
+85        android:extractNativeLibs="false"
+86        android:fullBackupContent="@xml/backup_rules"
+86-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:15:9-54
+87        android:icon="@mipmap/ic_launcher"
+87-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:16:9-43
+88        android:label="@string/app_name"
+88-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:17:9-41
+89        android:roundIcon="@mipmap/ic_launcher_round"
+89-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:18:9-54
+90        android:supportsRtl="true"
+90-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:19:9-35
+91        android:testOnly="true"
+92        android:theme="@style/Theme.StepOne" >
+92-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:20:9-45
+93        <activity
+93-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:23:9-31:20
+94            android:name="com.stepone.MainActivity"
+94-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:24:13-41
+95            android:exported="true"
+95-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:25:13-36
+96            android:theme="@style/Theme.StepOne" >
+96-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:26:13-49
+97            <intent-filter>
+97-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:27:13-30:29
+98                <action android:name="android.intent.action.MAIN" />
+98-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:17-69
+98-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:25-66
+99
+100                <category android:name="android.intent.category.LAUNCHER" />
+100-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:29:17-77
+100-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:29:27-74
+101            </intent-filter>
+102        </activity>
+103
+104        <service
+104-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:33:9-37:54
+105            android:name="com.stepone.service.StepCounterService"
+105-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:34:13-55
+106            android:enabled="true"
+106-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:35:13-35
+107            android:exported="false"
+107-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:36:13-37
+108            android:foregroundServiceType="health" />
+108-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:37:13-51
+109
+110        <receiver
+110-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:39:9-46:20
+111            android:name="com.stepone.receiver.BootReceiver"
+111-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:40:13-50
+112            android:enabled="true"
+112-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:41:13-35
+113            android:exported="false" >
+113-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:42:13-37
+114            <intent-filter>
+114-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:43:13-45:29
+115                <action android:name="android.intent.action.BOOT_COMPLETED" />
+115-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:44:17-79
+115-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:44:25-76
+116            </intent-filter>
+117        </receiver>
+118
+119        <meta-data
+119-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:48:9-50:69
+120            android:name="com.google.android.gms.ads.APPLICATION_ID"
+120-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:49:13-69
+121            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- Test ID -->
+121-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:50:13-67
+122        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+123        <activity
+123-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:56:9-61:43
+124            android:name="com.google.android.gms.ads.AdActivity"
+124-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:57:13-65
+125            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+125-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:58:13-122
+126            android:exported="false"
+126-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:59:13-37
+127            android:theme="@android:style/Theme.Translucent" />
+127-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:60:13-61
+128
+129        <provider
+129-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:63:9-68:43
+130            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+130-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:64:13-76
+131            android:authorities="com.stepone.mobileadsinitprovider"
+131-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:65:13-73
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:66:13-37
+133            android:initOrder="100" />
+133-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:67:13-36
+134
+135        <service
+135-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:70:9-74:43
+136            android:name="com.google.android.gms.ads.AdService"
+136-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:71:13-64
+137            android:enabled="true"
+137-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:72:13-35
+138            android:exported="false" />
+138-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:73:13-37
+139
+140        <activity
+140-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:76:9-80:43
+141            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+141-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:77:13-82
+142            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+142-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:78:13-122
+143            android:exported="false" />
+143-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:79:13-37
+144        <activity
+144-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:81:9-88:43
+145            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+145-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:82:13-82
+146            android:excludeFromRecents="true"
+146-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:83:13-46
+147            android:exported="false"
+147-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:84:13-37
+148            android:launchMode="singleTask"
+148-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:85:13-44
+149            android:taskAffinity=""
+149-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:86:13-36
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:87:13-72
+151
+152        <property
+152-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:90:9-92:62
+153            android:name="android.adservices.AD_SERVICES_CONFIG"
+153-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:91:13-65
+154            android:resource="@xml/gma_ad_services_config" />
+154-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:92:13-59
+155
+156        <receiver
+156-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:42:9-49:20
+157            android:name="com.razorpay.RzpTokenReceiver"
+157-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:43:13-57
+158            android:exported="true" >
+158-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:44:13-36
+159            <intent-filter>
+159-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:46:13-48:29
+160                <action android:name="rzp.device_token.share" />
+160-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:37:13-61
+160-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:37:21-58
+161            </intent-filter>
+162        </receiver>
+163
+164        <activity
+164-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:51:9-59:20
+165            android:name="com.razorpay.CheckoutActivity"
+165-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:52:13-57
+166            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+166-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:53:13-83
+167            android:exported="true"
+167-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:54:13-36
+168            android:theme="@style/CheckoutTheme" >
+168-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:55:13-49
+169            <intent-filter>
+169-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:56:13-58:29
+170                <action android:name="android.intent.action.MAIN" />
+170-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:17-69
+170-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:28:25-66
+171            </intent-filter>
+172        </activity>
+173
+174        <meta-data
+174-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:61:9-63:58
+175            android:name="com.razorpay.plugin.googlepay_all"
+175-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:62:13-61
+176            android:value="com.razorpay.RzpGpayMerged" />
+176-->[com.razorpay:checkout:1.6.33] /Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/AndroidManifest.xml:63:13-55
+177
+178        <activity
+178-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+179            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+179-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+180            android:excludeFromRecents="true"
+180-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+181            android:exported="false"
+181-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+182-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+183        <!--
+184            Service handling Google Sign-In user revocation. For apps that do not integrate with
+185            Google Sign-In, this service will never be started.
+186        -->
+187        <service
+187-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+188            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+188-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+189            android:exported="true"
+189-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+190            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+190-->[com.google.android.gms:play-services-auth:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+191        <uses-library
+191-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+192            android:name="org.apache.http.legacy"
+192-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+193            android:required="false" />
+193-->[com.google.android.gms:play-services-maps:17.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/50736ec9486e0fbec7f0c7460c1c33aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+194
+195        <activity
+195-->[com.google.android.gms:play-services-base:18.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/110fb6146946822f946fd3fa5918998d/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:9-22:45
+196            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+196-->[com.google.android.gms:play-services-base:18.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/110fb6146946822f946fd3fa5918998d/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:19-85
+197            android:exported="false"
+197-->[com.google.android.gms:play-services-base:18.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/110fb6146946822f946fd3fa5918998d/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:22:19-43
+198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+198-->[com.google.android.gms:play-services-base:18.0.0] /Users/prajwalanand/.gradle/caches/transforms-3/110fb6146946822f946fd3fa5918998d/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:21:19-78
+199
+200        <meta-data
+200-->[com.google.android.gms:play-services-basement:18.2.0] /Users/prajwalanand/.gradle/caches/transforms-3/8b3c734e8b60d954d30dbc63a2341508/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+201            android:name="com.google.android.gms.version"
+201-->[com.google.android.gms:play-services-basement:18.2.0] /Users/prajwalanand/.gradle/caches/transforms-3/8b3c734e8b60d954d30dbc63a2341508/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+202            android:value="@integer/google_play_services_version" />
+202-->[com.google.android.gms:play-services-basement:18.2.0] /Users/prajwalanand/.gradle/caches/transforms-3/8b3c734e8b60d954d30dbc63a2341508/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+203
+204        <activity
+204-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/9e791a2fcdb312d1d493532bd9475e35/transformed/jetified-ui-tooling-release/AndroidManifest.xml:23:9-25:39
+205            android:name="androidx.compose.ui.tooling.PreviewActivity"
+205-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/9e791a2fcdb312d1d493532bd9475e35/transformed/jetified-ui-tooling-release/AndroidManifest.xml:24:13-71
+206            android:exported="true" />
+206-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/9e791a2fcdb312d1d493532bd9475e35/transformed/jetified-ui-tooling-release/AndroidManifest.xml:25:13-36
+207        <activity
+207-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/f8974d5d4d97a9255d201885b373f139/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+208            android:name="androidx.activity.ComponentActivity"
+208-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/f8974d5d4d97a9255d201885b373f139/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+209            android:exported="true" />
+209-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/prajwalanand/.gradle/caches/transforms-3/f8974d5d4d97a9255d201885b373f139/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+210
+211        <provider
+211-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+212            android:name="androidx.startup.InitializationProvider"
+212-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+213            android:authorities="com.stepone.androidx-startup"
+213-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+214            android:exported="false" >
+214-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+215            <meta-data
+215-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+216                android:name="androidx.work.WorkManagerInitializer"
+216-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+217                android:value="androidx.startup" />
+217-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+218            <meta-data
+218-->[androidx.emoji2:emoji2:1.4.0] /Users/prajwalanand/.gradle/caches/transforms-3/4f8b08e1b868373ec467c673a86d93dd/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+219                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+219-->[androidx.emoji2:emoji2:1.4.0] /Users/prajwalanand/.gradle/caches/transforms-3/4f8b08e1b868373ec467c673a86d93dd/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+220                android:value="androidx.startup" />
+220-->[androidx.emoji2:emoji2:1.4.0] /Users/prajwalanand/.gradle/caches/transforms-3/4f8b08e1b868373ec467c673a86d93dd/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+221            <meta-data
+221-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae229fd7b94fb2c229ed362f5063ae75/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+222                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+222-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae229fd7b94fb2c229ed362f5063ae75/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+223                android:value="androidx.startup" />
+223-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae229fd7b94fb2c229ed362f5063ae75/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+224            <meta-data
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+225                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+225-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+226                android:value="androidx.startup" />
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+227        </provider>
+228
+229        <service
+229-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+230            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+230-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+231            android:directBootAware="false"
+231-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+232            android:enabled="@bool/enable_system_alarm_service_default"
+232-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+233            android:exported="false" />
+233-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+234        <service
+234-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+235            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+235-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+237            android:enabled="@bool/enable_system_job_service_default"
+237-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+238            android:exported="true"
+238-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+239            android:permission="android.permission.BIND_JOB_SERVICE" />
+239-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+240        <service
+240-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+241            android:name="androidx.work.impl.foreground.SystemForegroundService"
+241-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+242            android:directBootAware="false"
+242-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+243            android:enabled="@bool/enable_system_foreground_service_default"
+243-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+244            android:exported="false" />
+244-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+245
+246        <receiver
+246-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+247            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+247-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+248            android:directBootAware="false"
+248-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+249            android:enabled="true"
+249-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+250            android:exported="false" />
+250-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+251        <receiver
+251-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+252            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+252-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+253            android:directBootAware="false"
+253-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+254            android:enabled="false"
+254-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+255            android:exported="false" >
+255-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+256            <intent-filter>
+256-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+257                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+257-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+257-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+258                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+258-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+258-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+259            </intent-filter>
+260        </receiver>
+261        <receiver
+261-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+262            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+262-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+263            android:directBootAware="false"
+263-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+264            android:enabled="false"
+264-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+265            android:exported="false" >
+265-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+266            <intent-filter>
+266-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+267                <action android:name="android.intent.action.BATTERY_OKAY" />
+267-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+267-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+268                <action android:name="android.intent.action.BATTERY_LOW" />
+268-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+268-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+269            </intent-filter>
+270        </receiver>
+271        <receiver
+271-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+272            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+272-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+273            android:directBootAware="false"
+273-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+274            android:enabled="false"
+274-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+275            android:exported="false" >
+275-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+276            <intent-filter>
+276-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+277                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+277-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+277-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+278                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+278-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+278-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+279            </intent-filter>
+280        </receiver>
+281        <receiver
+281-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+282            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+282-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+283            android:directBootAware="false"
+283-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+284            android:enabled="false"
+284-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+285            android:exported="false" >
+285-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+286            <intent-filter>
+286-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+287                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+287-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+287-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+288            </intent-filter>
+289        </receiver>
+290        <receiver
+290-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+291            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+291-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+292            android:directBootAware="false"
+292-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+293            android:enabled="false"
+293-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+294            android:exported="false" >
+294-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+295            <intent-filter>
+295-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+296                <action android:name="android.intent.action.BOOT_COMPLETED" />
+296-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:44:17-79
+296-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:44:25-76
+297                <action android:name="android.intent.action.TIME_SET" />
+297-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+297-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+298                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+298-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+298-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+299            </intent-filter>
+300        </receiver>
+301        <receiver
+301-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+302            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+302-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+303            android:directBootAware="false"
+303-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+304            android:enabled="@bool/enable_system_alarm_service_default"
+304-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+305            android:exported="false" >
+305-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+307                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+307-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+307-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+308            </intent-filter>
+309        </receiver>
+310        <receiver
+310-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+311            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+311-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+312            android:directBootAware="false"
+312-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+313            android:enabled="true"
+313-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+314            android:exported="true"
+314-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+315            android:permission="android.permission.DUMP" >
+315-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+316            <intent-filter>
+316-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+317                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+317-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+317-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+318            </intent-filter>
+319        </receiver>
+320
+321        <uses-library
+321-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/prajwalanand/.gradle/caches/transforms-3/91b0444a44ed2db10b884ed5732e45af/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+322            android:name="android.ext.adservices"
+322-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/prajwalanand/.gradle/caches/transforms-3/91b0444a44ed2db10b884ed5732e45af/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+323            android:required="false" />
+323-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/prajwalanand/.gradle/caches/transforms-3/91b0444a44ed2db10b884ed5732e45af/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+324
+325        <service
+325-->[androidx.room:room-runtime:2.6.1] /Users/prajwalanand/.gradle/caches/transforms-3/5958a05db6ddb42d884845f055b0db91/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+326            android:name="androidx.room.MultiInstanceInvalidationService"
+326-->[androidx.room:room-runtime:2.6.1] /Users/prajwalanand/.gradle/caches/transforms-3/5958a05db6ddb42d884845f055b0db91/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+327            android:directBootAware="true"
+327-->[androidx.room:room-runtime:2.6.1] /Users/prajwalanand/.gradle/caches/transforms-3/5958a05db6ddb42d884845f055b0db91/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+328            android:exported="false" />
+328-->[androidx.room:room-runtime:2.6.1] /Users/prajwalanand/.gradle/caches/transforms-3/5958a05db6ddb42d884845f055b0db91/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+329
+330        <receiver
+330-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+331            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+331-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+332            android:directBootAware="false"
+332-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+333            android:enabled="true"
+333-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+334            android:exported="true"
+334-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+335            android:permission="android.permission.DUMP" >
+335-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+336            <intent-filter>
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+337                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+337-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+337-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+338            </intent-filter>
+339            <intent-filter>
+339-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+340                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+340-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+340-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+341            </intent-filter>
+342            <intent-filter>
+342-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+343                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+343-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+343-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+344            </intent-filter>
+345            <intent-filter>
+345-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+346                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+346-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+346-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/prajwalanand/.gradle/caches/transforms-3/c3050c4f6f19d72f27103aa299c27e6c/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+347            </intent-filter>
+348        </receiver>
+349    </application>
+350
+351</manifest>
