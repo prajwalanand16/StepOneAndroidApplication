@@ -5,7 +5,6 @@ import androidx.compose.ui.graphics.Color
 object Constants {
     const val NOTIFICATION_ID = 1
     const val CHANNEL_ID = "step_counter_channel"
-    const val STEP_GOAL = 10000
 
     val MILESTONES = listOf(
         Milestone(0, "Deep Space", Color(0xFF0F172A)), // Slate 900

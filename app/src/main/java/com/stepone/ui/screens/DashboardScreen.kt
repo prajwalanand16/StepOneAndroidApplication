@@ -23,11 +23,13 @@ import com.stepone.util.Constants
 @Composable
 fun DashboardScreen(
     isPro: Boolean = false,
-    onRemoveAdsClicked: () -> Unit = {}
+    stepGoal: Int = 10000,
+    onRemoveAdsClicked: () -> Unit = {},
+    onStepGoalChanged: (Int) -> Unit = {}
 ) {
     val steps by StepCounterService.stepsFlow.collectAsState()
     val milestone = Constants.getMilestoneForSteps(steps)
-    val progress = steps.toFloat() / Constants.STEP_GOAL
+    val progress = steps.toFloat() / stepGoal
     val animatedProgress by animateFloatAsState(targetValue = progress, label = "ProgressAnimation")
 
     val sheetState = rememberModalBottomSheetState()
@@ -54,7 +56,9 @@ fun DashboardScreen(
             ) {
                 SettingsContent(
                     isPro = isPro,
-                    onRemoveAdsClicked = onRemoveAdsClicked
+                    stepGoal = stepGoal,
+                    onRemoveAdsClicked = onRemoveAdsClicked,
+                    onStepGoalChanged = onStepGoalChanged
                 )
             }
         }
@@ -64,8 +68,11 @@ fun DashboardScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+            // Hide simulation button for production. 
+            // It can still be accessed via long-press -> settings if you move it there, 
+            // or just kept commented out.
+            /*
             val context = androidx.compose.ui.platform.LocalContext.current
-            // Debug button for simulation
             Button(
                 onClick = { StepCounterService.addSteps(context, 500) },
                 modifier = Modifier.padding(bottom = 16.dp),
@@ -73,6 +80,7 @@ fun DashboardScreen(
             ) {
                 Text("Simulate 500 Steps", color = Color.White)
             }
+            */
 
             Box(contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(
@@ -118,7 +126,9 @@ fun DashboardScreen(
 @Composable
 fun SettingsContent(
     isPro: Boolean = false,
-    onRemoveAdsClicked: () -> Unit = {}
+    stepGoal: Int = 10000,
+    onRemoveAdsClicked: () -> Unit = {},
+    onStepGoalChanged: (Int) -> Unit = {}
 ) {
     Column(
         modifier = Modifier
@@ -132,6 +142,25 @@ fun SettingsContent(
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Text(
+            text = "Daily Step Goal: $stepGoal",
+            color = Color.White.copy(alpha = 0.7f),
+            fontSize = 16.sp
+        )
+        Slider(
+            value = stepGoal.toFloat(),
+            onValueChange = { onStepGoalChanged(it.toInt()) },
+            valueRange = 2000f..20000f,
+            steps = 17,
+            colors = SliderDefaults.colors(
+                thumbColor = Color.White,
+                activeTrackColor = Color.White,
+                inactiveTrackColor = Color.White.copy(alpha = 0.2f)
+            )
+        )
+
         Spacer(modifier = Modifier.height(32.dp))
         
         if (!isPro) {

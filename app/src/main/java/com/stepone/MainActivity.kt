@@ -11,6 +11,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import com.razorpay.Checkout
 import com.razorpay.PaymentResultListener
@@ -37,13 +39,19 @@ class MainActivity : ComponentActivity(), PaymentResultListener {
 
         setContent {
             StepOneTheme {
+                val stepGoal = remember { mutableStateOf(preferenceManager.getStepGoal()) }
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     DashboardScreen(
                         isPro = preferenceManager.isPro(),
-                        onRemoveAdsClicked = { startPayment() }
+                        stepGoal = stepGoal.value,
+                        onRemoveAdsClicked = { startPayment() },
+                        onStepGoalChanged = { newGoal ->
+                            preferenceManager.setStepGoal(newGoal)
+                            stepGoal.value = newGoal
+                        }
                     )
                 }
             }
