@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeDebugResources-70:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.stepone.app-mergeDebugResources-71:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/6191dd09e85f2e74807dc9c413388767/transformed/jetified-ui-release/res/values-en-rIN/values-en-rIN.xml",

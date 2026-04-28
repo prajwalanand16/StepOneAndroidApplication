@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeDebugResources-70:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.stepone.app-mergeDebugResources-71:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/110fb6146946822f946fd3fa5918998d/transformed/jetified-play-services-base-18.0.0/res/values-fr-rCA/values.xml",

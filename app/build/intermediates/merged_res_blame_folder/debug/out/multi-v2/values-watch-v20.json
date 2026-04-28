@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeDebugResources-70:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.stepone.app-mergeDebugResources-71:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/7e76e3441ab06dc516b15231e861692d/transformed/jetified-play-services-auth-17.0.0/res/values-watch-v20/values.xml",
