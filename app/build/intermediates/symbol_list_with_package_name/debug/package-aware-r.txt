@@ -1,4 +1,4 @@
-com.stepone
+com.prajwal.stepone
 anim fragment_fast_out_extra_slow_in
 animator fragment_close_enter
 animator fragment_close_exit
@@ -103,7 +103,6 @@ bool isTablet
 bool workmanager_test_configuration
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
-color black
 color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
@@ -124,11 +123,6 @@ color common_google_signin_btn_tint
 color ic_launcher_background
 color notification_action_color_filter
 color notification_icon_bg_color
-color purple_200
-color purple_500
-color purple_700
-color teal_200
-color teal_700
 color vector_tint_color
 color vector_tint_theme_color
 color wallet_bright_foreground_disabled_holo_light
@@ -144,7 +138,6 @@ color wallet_holo_blue_light
 color wallet_link_text_light
 color wallet_primary_text_holo_light
 color wallet_secondary_text_holo_dark
-color white
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen compat_button_inset_horizontal_material

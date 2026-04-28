@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeReleaseResources-67:/values-hy/values-hy.xml",
+            "outputFile": "com.prajwal.stepone.app-mergeReleaseResources-67:/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/ccac4310de0c090c9881c4a7378105ae/transformed/browser-1.4.0/res/values-hy/values-hy.xml",

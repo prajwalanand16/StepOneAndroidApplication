@@ -1,12 +1,12 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.stepone"
-4    android:versionCode="1"
-5    android:versionName="1.0" >
+3    package="com.prajwal.stepone"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-9        android:targetSdkVersion="34" />
+9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 11-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:5:5-79
@@ -130,19 +130,19 @@
 72
 73    <permission
 73-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-74        android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+74        android:name="com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 74-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 75        android:protectionLevel="signature" />
 75-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 76
-77    <uses-permission android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+77    <uses-permission android:name="com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 77-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 77-->[androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 78
 79    <application
 79-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:11:5-51:19
-80        android:name="com.stepone.StepOneApp"
-80-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:12:9-35
+80        android:name="com.prajwal.stepone.StepOneApp"
+80-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:12:9-54
 81        android:allowBackup="true"
 81-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:13:9-35
 82        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -166,8 +166,8 @@
 92-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:20:9-45
 93        <activity
 93-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:23:9-31:20
-94            android:name="com.stepone.MainActivity"
-94-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:24:13-41
+94            android:name="com.prajwal.stepone.MainActivity"
+94-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:24:13-60
 95            android:exported="true"
 95-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:25:13-36
 96            android:theme="@style/Theme.StepOne" >
@@ -186,8 +186,8 @@
 103
 104        <service
 104-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:33:9-37:54
-105            android:name="com.stepone.service.StepCounterService"
-105-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:34:13-55
+105            android:name="com.prajwal.stepone.service.StepCounterService"
+105-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:34:13-74
 106            android:enabled="true"
 106-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:35:13-35
 107            android:exported="false"
@@ -197,8 +197,8 @@
 109
 110        <receiver
 110-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:39:9-46:20
-111            android:name="com.stepone.receiver.BootReceiver"
-111-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:40:13-50
+111            android:name="com.prajwal.stepone.receiver.BootReceiver"
+111-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:40:13-69
 112            android:enabled="true"
 112-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:41:13-35
 113            android:exported="false" >
@@ -215,7 +215,7 @@
 119-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:48:9-50:69
 120            android:name="com.google.android.gms.ads.APPLICATION_ID"
 120-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:49:13-69
-121            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- Test ID -->
+121            android:value="ca-app-pub-7818602725323272~3802076456" />
 121-->/Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:50:13-67
 122        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
 123        <activity
@@ -233,7 +233,7 @@
 129-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:63:9-68:43
 130            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
 130-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:64:13-76
-131            android:authorities="com.stepone.mobileadsinitprovider"
+131            android:authorities="com.prajwal.stepone.mobileadsinitprovider"
 131-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:65:13-73
 132            android:exported="false"
 132-->[com.google.android.gms:play-services-ads-lite:22.6.0] /Users/prajwalanand/.gradle/caches/transforms-3/ec8e74c7dfdfeed9757e1e9ad1c08990/transformed/jetified-play-services-ads-lite-22.6.0/AndroidManifest.xml:66:13-37
@@ -380,7 +380,7 @@
 211-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
 212            android:name="androidx.startup.InitializationProvider"
 212-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
-213            android:authorities="com.stepone.androidx-startup"
+213            android:authorities="com.prajwal.stepone.androidx-startup"
 213-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
 214            android:exported="false" >
 214-->[androidx.work:work-runtime:2.7.0] /Users/prajwalanand/.gradle/caches/transforms-3/7d1cfd2bf1a43069266992a83809f001/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37

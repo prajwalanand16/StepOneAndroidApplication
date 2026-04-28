@@ -27634,105 +27634,105 @@ com.google.j2objc.annotations.WeakOuter
 com.google.thirdparty.publicsuffix.PublicSuffixPatterns
 com.google.thirdparty.publicsuffix.PublicSuffixType
 com.google.thirdparty.publicsuffix.TrieParser
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl:
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl:
     public java.util.Set getDisableFragmentGetContextFix()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC:
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC:
     private void <init>()
-com.stepone.Hilt_MainActivity:
+com.prajwal.stepone.Hilt_MainActivity:
     void <init>(int)
     public synthetic bridge dagger.hilt.internal.GeneratedComponentManager componentManager()
     public androidx.lifecycle.ViewModelProvider$Factory getDefaultViewModelProviderFactory()
-com.stepone.Hilt_StepOneApp:
+com.prajwal.stepone.Hilt_StepOneApp:
     public synthetic bridge dagger.hilt.internal.GeneratedComponentManager componentManager()
-com.stepone.MainActivity:
-    public final void setPreferenceManager(com.stepone.util.PreferenceManager)
-com.stepone.MainActivity_MembersInjector:
+com.prajwal.stepone.MainActivity:
+    public final void setPreferenceManager(com.prajwal.stepone.util.PreferenceManager)
+com.prajwal.stepone.MainActivity_MembersInjector:
     private final javax.inject.Provider preferenceManagerProvider
     public void <init>(javax.inject.Provider)
     public static dagger.MembersInjector create(javax.inject.Provider)
-    public void injectMembers(com.stepone.MainActivity)
+    public void injectMembers(com.prajwal.stepone.MainActivity)
     public synthetic bridge void injectMembers(java.lang.Object)
-com.stepone.R$color
-com.stepone.R$drawable
-com.stepone.R$mipmap
-com.stepone.R$string
-com.stepone.R$style
-com.stepone.R$xml
-com.stepone.R
-com.stepone.StepOneApp:
-    public final void setAppOpenAdManager(com.stepone.util.AppOpenAdManager)
-com.stepone.StepOneApp_ComponentTreeDeps
-com.stepone.StepOneApp_HiltComponents$ActivityC$Builder
-com.stepone.StepOneApp_HiltComponents$ActivityCBuilderModule
-com.stepone.StepOneApp_HiltComponents$ActivityRetainedC$Builder
-com.stepone.StepOneApp_HiltComponents$ActivityRetainedCBuilderModule
-com.stepone.StepOneApp_HiltComponents$FragmentC$Builder
-com.stepone.StepOneApp_HiltComponents$FragmentCBuilderModule
-com.stepone.StepOneApp_HiltComponents$ServiceC$Builder
-com.stepone.StepOneApp_HiltComponents$ServiceCBuilderModule
-com.stepone.StepOneApp_HiltComponents$ViewC$Builder
-com.stepone.StepOneApp_HiltComponents$ViewCBuilderModule
-com.stepone.StepOneApp_HiltComponents$ViewModelC$Builder
-com.stepone.StepOneApp_HiltComponents$ViewModelCBuilderModule
-com.stepone.StepOneApp_HiltComponents$ViewWithFragmentC$Builder
-com.stepone.StepOneApp_HiltComponents$ViewWithFragmentCBuilderModule
-com.stepone.StepOneApp_HiltComponents
-com.stepone.StepOneApp_MembersInjector:
+com.prajwal.stepone.R$color
+com.prajwal.stepone.R$drawable
+com.prajwal.stepone.R$mipmap
+com.prajwal.stepone.R$string
+com.prajwal.stepone.R$style
+com.prajwal.stepone.R$xml
+com.prajwal.stepone.R
+com.prajwal.stepone.StepOneApp:
+    public final void setAppOpenAdManager(com.prajwal.stepone.util.AppOpenAdManager)
+com.prajwal.stepone.StepOneApp_ComponentTreeDeps
+com.prajwal.stepone.StepOneApp_HiltComponents$ActivityC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ActivityCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$ActivityRetainedC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ActivityRetainedCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$FragmentC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$FragmentCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$ServiceC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ServiceCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewModelC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewModelCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewWithFragmentC$Builder
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewWithFragmentCBuilderModule
+com.prajwal.stepone.StepOneApp_HiltComponents
+com.prajwal.stepone.StepOneApp_MembersInjector:
     private final javax.inject.Provider appOpenAdManagerProvider
     public void <init>(javax.inject.Provider)
     public static dagger.MembersInjector create(javax.inject.Provider)
-    public void injectMembers(com.stepone.StepOneApp)
+    public void injectMembers(com.prajwal.stepone.StepOneApp)
     public synthetic bridge void injectMembers(java.lang.Object)
-com.stepone.data.StepDatabase:
+com.prajwal.stepone.data.StepDatabase:
     public static final int $stable
-com.stepone.data.StepDatabase_Impl:
+com.prajwal.stepone.data.StepDatabase_Impl:
     public void clearAllTables()
-com.stepone.data.StepEntry:
+com.prajwal.stepone.data.StepEntry:
     public static final int $stable
     public final java.lang.String component1()
     public final int component2()
-    public final com.stepone.data.StepEntry copy(java.lang.String,int)
-    public static synthetic com.stepone.data.StepEntry copy$default(com.stepone.data.StepEntry,java.lang.String,int,int,java.lang.Object)
-com.stepone.di.DataModule:
+    public final com.prajwal.stepone.data.StepEntry copy(java.lang.String,int)
+    public static synthetic com.prajwal.stepone.data.StepEntry copy$default(com.prajwal.stepone.data.StepEntry,java.lang.String,int,int,java.lang.Object)
+com.prajwal.stepone.di.DataModule:
     public static final int $stable
-com.stepone.di.DataModule_ProvideDatabaseFactory:
+com.prajwal.stepone.di.DataModule_ProvideDatabaseFactory:
     private final javax.inject.Provider contextProvider
     public void <init>(javax.inject.Provider)
-    public static com.stepone.di.DataModule_ProvideDatabaseFactory create(javax.inject.Provider)
-    public com.stepone.data.StepDatabase get()
+    public static com.prajwal.stepone.di.DataModule_ProvideDatabaseFactory create(javax.inject.Provider)
+    public com.prajwal.stepone.data.StepDatabase get()
     public synthetic bridge java.lang.Object get()
-com.stepone.di.DataModule_ProvideStepDaoFactory:
+com.prajwal.stepone.di.DataModule_ProvideStepDaoFactory:
     private final javax.inject.Provider databaseProvider
     public void <init>(javax.inject.Provider)
-    public static com.stepone.di.DataModule_ProvideStepDaoFactory create(javax.inject.Provider)
-    public com.stepone.data.StepDao get()
+    public static com.prajwal.stepone.di.DataModule_ProvideStepDaoFactory create(javax.inject.Provider)
+    public com.prajwal.stepone.data.StepDao get()
     public synthetic bridge java.lang.Object get()
-com.stepone.receiver.BootReceiver:
+com.prajwal.stepone.receiver.BootReceiver:
     public static final int $stable
-com.stepone.service.Hilt_StepCounterService:
+com.prajwal.stepone.service.Hilt_StepCounterService:
     public synthetic bridge dagger.hilt.internal.GeneratedComponentManager componentManager()
-com.stepone.service.StepCounterService:
-    public final void setStepDao(com.stepone.data.StepDao)
-com.stepone.service.StepCounterService_MembersInjector:
+com.prajwal.stepone.service.StepCounterService:
+    public final void setStepDao(com.prajwal.stepone.data.StepDao)
+com.prajwal.stepone.service.StepCounterService_MembersInjector:
     private final javax.inject.Provider stepDaoProvider
     public void <init>(javax.inject.Provider)
     public static dagger.MembersInjector create(javax.inject.Provider)
-    public void injectMembers(com.stepone.service.StepCounterService)
+    public void injectMembers(com.prajwal.stepone.service.StepCounterService)
     public synthetic bridge void injectMembers(java.lang.Object)
-com.stepone.util.AdManager
-com.stepone.util.AppOpenAdManager_Factory
-com.stepone.util.Constants$Milestone:
+com.prajwal.stepone.util.AdManager
+com.prajwal.stepone.util.AppOpenAdManager_Factory
+com.prajwal.stepone.util.Constants$Milestone:
     public static final int $stable
     public final int component1()
     public final java.lang.String component2()
     public final long component3-0d7_KjU()
-    public final com.stepone.util.Constants$Milestone copy-mxwnekA(int,java.lang.String,long)
-    public static synthetic com.stepone.util.Constants$Milestone copy-mxwnekA$default(com.stepone.util.Constants$Milestone,int,java.lang.String,long,int,java.lang.Object)
-com.stepone.util.Constants:
+    public final com.prajwal.stepone.util.Constants$Milestone copy-mxwnekA(int,java.lang.String,long)
+    public static synthetic com.prajwal.stepone.util.Constants$Milestone copy-mxwnekA$default(com.prajwal.stepone.util.Constants$Milestone,int,java.lang.String,long,int,java.lang.Object)
+com.prajwal.stepone.util.Constants:
     public static final java.lang.String CHANNEL_ID
     public static final int NOTIFICATION_ID
     public final java.util.List getMILESTONES()
-com.stepone.util.PreferenceManager_Factory
+com.prajwal.stepone.util.PreferenceManager_Factory
 dagger.Binds
 dagger.BindsInstance
 dagger.BindsOptionalOf
@@ -27811,14 +27811,14 @@ dagger.hilt.internal.TestSingletonComponentManager
 dagger.hilt.internal.UnsafeCasts:
     private void <init>()
 dagger.hilt.internal.aggregatedroot.AggregatedRoot
-dagger.hilt.internal.aggregatedroot.codegen._com_stepone_StepOneApp
+dagger.hilt.internal.aggregatedroot.codegen._com_prajwal_stepone_StepOneApp
 dagger.hilt.internal.aliasof.AliasOfPropagatedData
 dagger.hilt.internal.componenttreedeps.ComponentTreeDeps
 dagger.hilt.internal.definecomponent.DefineComponentClasses
 dagger.hilt.internal.definecomponent.DefineComponentNoParent
 dagger.hilt.internal.generatesrootinput.GeneratesRootInputPropagatedData
 dagger.hilt.internal.processedrootsentinel.ProcessedRootSentinel
-dagger.hilt.internal.processedrootsentinel.codegen._com_stepone_StepOneApp
+dagger.hilt.internal.processedrootsentinel.codegen._com_prajwal_stepone_StepOneApp
 dagger.hilt.migration.AliasOf
 dagger.hilt.migration.DisableInstallInCheck
 dagger.hilt.package-info
@@ -27897,10 +27897,10 @@ dagger.multibindings.IntoSet
 dagger.multibindings.LongKey
 dagger.multibindings.Multibinds
 dagger.multibindings.StringKey
-hilt_aggregated_deps._com_stepone_MainActivity_GeneratedInjector
-hilt_aggregated_deps._com_stepone_StepOneApp_GeneratedInjector
-hilt_aggregated_deps._com_stepone_di_DataModule
-hilt_aggregated_deps._com_stepone_service_StepCounterService_GeneratedInjector
+hilt_aggregated_deps._com_prajwal_stepone_MainActivity_GeneratedInjector
+hilt_aggregated_deps._com_prajwal_stepone_StepOneApp_GeneratedInjector
+hilt_aggregated_deps._com_prajwal_stepone_di_DataModule
+hilt_aggregated_deps._com_prajwal_stepone_service_StepCounterService_GeneratedInjector
 hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint
 hilt_aggregated_deps._dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule
 hilt_aggregated_deps._dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_ActivityEntryPoint
@@ -35592,8 +35592,8 @@ androidx.browser.customtabs.CustomTabsIntent:
     public static java.util.List asList()
     public static com.google.android.gms.common.api.GoogleApi$Settings build()
     public final com.google.crypto.tink.shaded.protobuf.ByteString$LiteralByteString build()
-    public static com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl build()
-    public static com.stepone.StepOneApp_HiltComponents$ActivityRetainedC build()
+    public static com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl build()
+    public static com.prajwal.stepone.StepOneApp_HiltComponents$ActivityRetainedC build()
     public final void clear()
     public final boolean contains(androidx.compose.ui.node.LayoutNode)
     public final boolean contains$1(androidx.compose.ui.node.LayoutNode)
@@ -35642,7 +35642,7 @@ androidx.browser.customtabs.CustomTabsIntent:
 androidx.browser.customtabs.CustomTabsServiceConnection$1
 androidx.browser.customtabs.CustomTabsServiceConnection
 androidx.browser.customtabs.CustomTabsSession:
-    public static com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl build()
+    public static com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl build()
     public static android.os.IBinder getBinder()
     public static android.content.ComponentName getComponentName()
     public static android.app.PendingIntent getId()
@@ -41819,7 +41819,7 @@ androidx.compose.ui.node.LayoutTreeConsistencyChecker:
     public static void addMenuProvider()
     public static void assertConsistent()
     public static com.google.crypto.tink.monitoring.MonitoringKeysetInfo build()
-    public static com.stepone.StepOneApp_HiltComponents$ActivityC build()
+    public static com.prajwal.stepone.StepOneApp_HiltComponents$ActivityC build()
     public final boolean consistentLayoutState(androidx.compose.ui.node.LayoutNode)
     public final androidx.work.impl.utils.SerialExecutor getBackgroundExecutor()
     public static androidx.lifecycle.Lifecycle getLifecycle()
@@ -45882,7 +45882,7 @@ androidx.loader.content.Loader$OnLoadCompleteListener:
     public abstract void onLoadComplete()
 androidx.loader.content.Loader
 androidx.loader.content.ModernAsyncTask$2:
-    public static com.stepone.data.StepEntry call()
+    public static com.prajwal.stepone.data.StepEntry call()
     public static kotlin.Unit call()
 androidx.loader.content.ModernAsyncTask$4
 androidx.loader.content.ModernAsyncTask$Status$EnumUnboxingLocalUtility
@@ -46866,8 +46866,8 @@ androidx.work.impl.constraints.trackers.Trackers:
     public final com.google.crypto.tink.aead.AesEaxParameters build()
     public final com.google.crypto.tink.aead.AesGcmParameters build()
     public final com.google.crypto.tink.internal.SerializationRegistry build()
-    public static com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl build()
-    public static com.stepone.StepOneApp_HiltComponents$FragmentC build()
+    public static com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl build()
+    public static com.prajwal.stepone.StepOneApp_HiltComponents$FragmentC build()
     public final void burpActive()
     public static void constructIndex()
     public final boolean containsActiveFragment(java.lang.String)
@@ -46960,7 +46960,7 @@ androidx.work.impl.model.DependencyDao_Impl$1:
     private static java.lang.String createQuery$androidx$work$impl$model$WorkProgressDao_Impl$1()
     private static java.lang.String createQuery$androidx$work$impl$model$WorkSpecDao_Impl$1()
     private static java.lang.String createQuery$androidx$work$impl$model$WorkTagDao_Impl$1()
-    private static java.lang.String createQuery$com$stepone$data$StepDao_Impl$1()
+    private static java.lang.String createQuery$com$prajwal$stepone$data$StepDao_Impl$1()
 androidx.work.impl.model.DependencyDao_Impl:
     public static java.util.List getNamesForWorkSpecId()
     public static boolean hasDependents()
@@ -47039,7 +47039,7 @@ androidx.work.impl.utils.IdGenerator:
     public static androidx.work.impl.utils.IdGenerator applicationContextModule()
     public static void attachHost()
     public static void beginAdUnitExposure()
-    public static com.stepone.StepOneApp_HiltComponents$SingletonC build()
+    public static com.prajwal.stepone.StepOneApp_HiltComponents$SingletonC build()
     public final void cancel(java.lang.Runnable)
     public final void clear()
     public static void clearConditionalUserProperty()
@@ -60724,6 +60724,210 @@ com.google.crypto.tink.subtle.XChaCha20Poly1305
 com.google.crypto.tink.util.Bytes:
     public static int size()
 com.google.crypto.tink.util.SecretBytes
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl:
+    public final void injectMainActivity()
+    public static com.prajwal.stepone.MainActivity injectMainActivity2()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl$SwitchingProvider:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
+    public final int id
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
+    public void <init>()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl:
+    public static void initialize()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$Builder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$Builder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl serviceCImpl
+    public final void injectStepCounterService()
+    public static com.prajwal.stepone.service.StepCounterService injectStepCounterService2()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl:
+    public static void initialize$1()
+    public final void injectStepOneApp()
+    public static com.prajwal.stepone.StepOneApp injectStepOneApp2()
+    public static com.prajwal.stepone.data.StepDao_Impl stepDao()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl activityCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl viewCImpl
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
+    public void <init>(com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl,com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl)
+    public static com.prajwal.stepone.StepOneApp_HiltComponents$ViewModelC build()
+    public static com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder savedStateHandle()
+    public static com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder viewModelLifecycle()
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl viewModelCImpl
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCBuilder-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCBuilder
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl-IA
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl:
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl activityCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCImpl fragmentCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
+    public final com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl viewWithFragmentCImpl
+com.prajwal.stepone.DaggerStepOneApp_HiltComponents_SingletonC
+com.prajwal.stepone.Hilt_MainActivity:
+    public abstract void _initHiltInternal()
+    public abstract dagger.hilt.android.internal.managers.ActivityComponentManager createComponentManager()
+    public abstract void initSavedStateHandleHolder()
+    public abstract void inject()
+com.prajwal.stepone.Hilt_StepOneApp$1
+com.prajwal.stepone.Hilt_StepOneApp:
+    public abstract dagger.hilt.android.internal.managers.ApplicationComponentManager componentManager()
+    public abstract void hiltInternalInject()
+com.prajwal.stepone.MainActivity$$InternalSyntheticLambda$1$ca5134143d4ffe74bd1218afecb100ddcab60446f2acfa21d90715fd66952433$0
+com.prajwal.stepone.MainActivity$onCreate$1$1$1$1
+com.prajwal.stepone.MainActivity$onCreate$1$1$1$2
+com.prajwal.stepone.MainActivity$onCreate$1$1$1
+com.prajwal.stepone.MainActivity$onCreate$1
+com.prajwal.stepone.MainActivity:
+    public static final int $stable
+    static void <clinit>()
+    public final com.prajwal.stepone.util.PreferenceManager getPreferenceManager()
+    public static void requestPermissions()
+    public static void startPayment()
+    public static void startStepService()
+com.prajwal.stepone.MainActivity_GeneratedInjector:
+    public abstract void injectMainActivity()
+com.prajwal.stepone.MainActivity_MembersInjector
+com.prajwal.stepone.StepOneApp:
+    public static final int $stable
+    static void <clinit>()
+    public static com.prajwal.stepone.util.AppOpenAdManager getAppOpenAdManager()
+com.prajwal.stepone.StepOneApp_GeneratedInjector:
+    public abstract void injectStepOneApp()
+com.prajwal.stepone.StepOneApp_HiltComponents$ServiceC
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewC
+com.prajwal.stepone.StepOneApp_HiltComponents$ViewWithFragmentC
+com.prajwal.stepone.StepOneApp_MembersInjector
+com.prajwal.stepone.data.StepDao
+com.prajwal.stepone.data.StepDao_Impl$1
+com.prajwal.stepone.data.StepDao_Impl$2
+com.prajwal.stepone.data.StepDao_Impl$3
+com.prajwal.stepone.data.StepDao_Impl:
+    public static kotlinx.coroutines.flow.Flow getStepsForDate()
+    public static java.lang.Object insertOrUpdate()
+com.prajwal.stepone.data.StepDatabase:
+    static void <clinit>()
+com.prajwal.stepone.data.StepDatabase_Impl$1
+com.prajwal.stepone.data.StepEntry:
+    static void <clinit>()
+    public static java.lang.String getDate()
+    public static int getSteps()
+com.prajwal.stepone.di.DataModule
+com.prajwal.stepone.di.DataModule_ProvideDatabaseFactory
+com.prajwal.stepone.di.DataModule_ProvideStepDaoFactory
+com.prajwal.stepone.receiver.BootReceiver:
+    static void <clinit>()
+com.prajwal.stepone.service.Hilt_StepCounterService:
+    public abstract dagger.hilt.android.internal.managers.ServiceComponentManager componentManager()
+    public abstract dagger.hilt.android.internal.managers.ServiceComponentManager createComponentManager()
+    public abstract void inject()
+com.prajwal.stepone.service.StepCounterService$Companion
+com.prajwal.stepone.service.StepCounterService$loadInitialSteps$1$1
+com.prajwal.stepone.service.StepCounterService$loadInitialSteps$1:
+    public final java.lang.Object invoke$2()
+com.prajwal.stepone.service.StepCounterService$persistSteps$1:
+    public final java.lang.Object invoke$2()
+com.prajwal.stepone.service.StepCounterService:
+    public static final int $stable
+    public static final com.google.android.gms.dynamite.zzg Companion
+    public android.hardware.Sensor stepSensor
+    public static void createNotificationChannel()
+    public static java.lang.String getCurrentDate()
+    public final com.prajwal.stepone.data.StepDao_Impl getStepDao()
+    public static void loadInitialSteps()
+    public final void persistSteps()
+com.prajwal.stepone.service.StepCounterService_GeneratedInjector:
+    public abstract void injectStepCounterService()
+com.prajwal.stepone.service.StepCounterService_MembersInjector
+com.prajwal.stepone.ui.components.AtmosphereKt$Atmosphere$1$1
+com.prajwal.stepone.ui.components.AtmosphereKt$Atmosphere$2:
+    public final void invoke(androidx.compose.runtime.Composer,int)
+com.prajwal.stepone.ui.components.AtmosphereKt
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$1:
+    public final androidx.compose.animation.ContentTransform invoke()
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$2
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$3
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$4
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$2:
+    public static void invoke$45()
+com.prajwal.stepone.ui.components.NumberTickerKt$NumberTicker$2:
+    public final void invoke(androidx.compose.runtime.Composer,int)
+com.prajwal.stepone.ui.components.NumberTickerKt
+com.prajwal.stepone.ui.screens.ComposableSingletons$DashboardScreenKt$lambda-2$1
+com.prajwal.stepone.ui.screens.ComposableSingletons$DashboardScreenKt:
+    public static final com.prajwal.stepone.ui.screens.ComposableSingletons$DashboardScreenKt INSTANCE
+    public static kotlin.jvm.functions.Function3 getLambda-1$app_release()
+    public static kotlin.jvm.functions.Function3 getLambda-2$app_release()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$1:
+    public final void invoke()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$2:
+    public final void invoke$14()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$3$1$1
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$3$1:
+    public final java.lang.Object invoke$5()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$4$1$1
+com.prajwal.stepone.ui.screens.DashboardScreenKt$DashboardScreen$4$2
+com.prajwal.stepone.ui.screens.DashboardScreenKt$SettingsContent$1:
+    public final void invoke()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$SettingsContent$2:
+    public final void invoke$14()
+com.prajwal.stepone.ui.screens.DashboardScreenKt$SettingsContent$3$1$1
+com.prajwal.stepone.ui.screens.DashboardScreenKt$SettingsContent$3$2
+com.prajwal.stepone.ui.screens.DashboardScreenKt$SettingsContent$4
+com.prajwal.stepone.ui.screens.DashboardScreenKt$StatItem$2
+com.prajwal.stepone.ui.screens.DashboardScreenKt
+com.prajwal.stepone.ui.theme.ThemeKt$StepOneTheme$1:
+    public final void invoke(androidx.compose.runtime.Composer,int)
+com.prajwal.stepone.util.AppOpenAdManager$loadAd$1:
+    public static void onAdLoaded()
+com.prajwal.stepone.util.AppOpenAdManager:
+    public static final int $stable
+    static void <clinit>()
+    public final boolean isAdAvailable()
+    public static void registerActivityLifecycleCallbacks()
+    public static void showAdIfAvailable()
+com.prajwal.stepone.util.Constants$Milestone:
+    static void <clinit>()
+    public static long getColor-0d7_KjU()
+    public static java.lang.String getName()
+    public static int getSteps()
+com.prajwal.stepone.util.Constants:
+    public static final int $stable
+    public static final com.prajwal.stepone.util.Constants INSTANCE
+com.prajwal.stepone.util.PreferenceManager:
+    public static final int $stable
+    public final androidx.browser.customtabs.CustomTabsIntent masterKey
+    static void <clinit>()
+    public static int getStepGoal()
+    public final boolean isPro()
+    public static void setPro()
+    public static void setStepGoal()
 com.razorpay.AnalyticsUtil:
     static void <clinit>()
 com.razorpay.AppSignatureHelper:
@@ -60739,210 +60943,6 @@ com.razorpay.n$$t$:
     static void <clinit>()
 com.razorpay.p$_5$:
     static void <clinit>()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl:
-    public final void injectMainActivity()
-    public static com.stepone.MainActivity injectMainActivity2()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl$SwitchingProvider:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
-    public final int id
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
-    public void <init>()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl:
-    public static void initialize()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$Builder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$Builder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ServiceCImpl serviceCImpl
-    public final void injectStepCounterService()
-    public static com.stepone.service.StepCounterService injectStepCounterService2()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl:
-    public static void initialize$1()
-    public final void injectStepOneApp()
-    public static com.stepone.StepOneApp injectStepOneApp2()
-    public static com.stepone.data.StepDao_Impl stepDao()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl activityCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewCImpl viewCImpl
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
-    public void <init>(com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl,com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl)
-    public static com.stepone.StepOneApp_HiltComponents$ViewModelC build()
-    public static com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder savedStateHandle()
-    public static com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCBuilder viewModelLifecycle()
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewModelCImpl viewModelCImpl
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCBuilder-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCBuilder
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl-IA
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl:
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityCImpl activityCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ActivityRetainedCImpl activityRetainedCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$FragmentCImpl fragmentCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$SingletonCImpl singletonCImpl
-    public final com.stepone.DaggerStepOneApp_HiltComponents_SingletonC$ViewWithFragmentCImpl viewWithFragmentCImpl
-com.stepone.DaggerStepOneApp_HiltComponents_SingletonC
-com.stepone.Hilt_MainActivity:
-    public abstract void _initHiltInternal()
-    public abstract dagger.hilt.android.internal.managers.ActivityComponentManager createComponentManager()
-    public abstract void initSavedStateHandleHolder()
-    public abstract void inject()
-com.stepone.Hilt_StepOneApp$1
-com.stepone.Hilt_StepOneApp:
-    public abstract dagger.hilt.android.internal.managers.ApplicationComponentManager componentManager()
-    public abstract void hiltInternalInject()
-com.stepone.MainActivity$$InternalSyntheticLambda$1$daf9342ae7e54b9f8da67cb82056a08178f93f8b900f18a7c2021faeebeecf54$0
-com.stepone.MainActivity$onCreate$1$1$1$1
-com.stepone.MainActivity$onCreate$1$1$1$2
-com.stepone.MainActivity$onCreate$1$1$1
-com.stepone.MainActivity$onCreate$1
-com.stepone.MainActivity:
-    public static final int $stable
-    static void <clinit>()
-    public final com.stepone.util.PreferenceManager getPreferenceManager()
-    public static void requestPermissions()
-    public static void startPayment()
-    public static void startStepService()
-com.stepone.MainActivity_GeneratedInjector:
-    public abstract void injectMainActivity()
-com.stepone.MainActivity_MembersInjector
-com.stepone.StepOneApp:
-    public static final int $stable
-    static void <clinit>()
-    public static com.stepone.util.AppOpenAdManager getAppOpenAdManager()
-com.stepone.StepOneApp_GeneratedInjector:
-    public abstract void injectStepOneApp()
-com.stepone.StepOneApp_HiltComponents$ServiceC
-com.stepone.StepOneApp_HiltComponents$ViewC
-com.stepone.StepOneApp_HiltComponents$ViewWithFragmentC
-com.stepone.StepOneApp_MembersInjector
-com.stepone.data.StepDao
-com.stepone.data.StepDao_Impl$1
-com.stepone.data.StepDao_Impl$2
-com.stepone.data.StepDao_Impl$3
-com.stepone.data.StepDao_Impl:
-    public static kotlinx.coroutines.flow.Flow getStepsForDate()
-    public static java.lang.Object insertOrUpdate()
-com.stepone.data.StepDatabase:
-    static void <clinit>()
-com.stepone.data.StepDatabase_Impl$1
-com.stepone.data.StepEntry:
-    static void <clinit>()
-    public static java.lang.String getDate()
-    public static int getSteps()
-com.stepone.di.DataModule
-com.stepone.di.DataModule_ProvideDatabaseFactory
-com.stepone.di.DataModule_ProvideStepDaoFactory
-com.stepone.receiver.BootReceiver:
-    static void <clinit>()
-com.stepone.service.Hilt_StepCounterService:
-    public abstract dagger.hilt.android.internal.managers.ServiceComponentManager componentManager()
-    public abstract dagger.hilt.android.internal.managers.ServiceComponentManager createComponentManager()
-    public abstract void inject()
-com.stepone.service.StepCounterService$Companion
-com.stepone.service.StepCounterService$loadInitialSteps$1$1
-com.stepone.service.StepCounterService$loadInitialSteps$1:
-    public final java.lang.Object invoke$2()
-com.stepone.service.StepCounterService$persistSteps$1:
-    public final java.lang.Object invoke$2()
-com.stepone.service.StepCounterService:
-    public static final int $stable
-    public static final com.google.android.gms.dynamite.zzg Companion
-    public android.hardware.Sensor stepSensor
-    public static void createNotificationChannel()
-    public static java.lang.String getCurrentDate()
-    public final com.stepone.data.StepDao_Impl getStepDao()
-    public static void loadInitialSteps()
-    public final void persistSteps()
-com.stepone.service.StepCounterService_GeneratedInjector:
-    public abstract void injectStepCounterService()
-com.stepone.service.StepCounterService_MembersInjector
-com.stepone.ui.components.AtmosphereKt$Atmosphere$1$1
-com.stepone.ui.components.AtmosphereKt$Atmosphere$2:
-    public final void invoke(androidx.compose.runtime.Composer,int)
-com.stepone.ui.components.AtmosphereKt
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$1:
-    public final androidx.compose.animation.ContentTransform invoke()
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$2
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$3
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1$4
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$1
-com.stepone.ui.components.NumberTickerKt$NumberTicker$1$1$2:
-    public static void invoke$45()
-com.stepone.ui.components.NumberTickerKt$NumberTicker$2:
-    public final void invoke(androidx.compose.runtime.Composer,int)
-com.stepone.ui.components.NumberTickerKt
-com.stepone.ui.screens.ComposableSingletons$DashboardScreenKt$lambda-2$1
-com.stepone.ui.screens.ComposableSingletons$DashboardScreenKt:
-    public static final com.stepone.ui.screens.ComposableSingletons$DashboardScreenKt INSTANCE
-    public static kotlin.jvm.functions.Function3 getLambda-1$app_release()
-    public static kotlin.jvm.functions.Function3 getLambda-2$app_release()
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$1:
-    public final void invoke()
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$2:
-    public final void invoke$14()
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$3$1$1
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$3$1:
-    public final java.lang.Object invoke$5()
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$4$1$1
-com.stepone.ui.screens.DashboardScreenKt$DashboardScreen$4$2
-com.stepone.ui.screens.DashboardScreenKt$SettingsContent$1:
-    public final void invoke()
-com.stepone.ui.screens.DashboardScreenKt$SettingsContent$2:
-    public final void invoke$14()
-com.stepone.ui.screens.DashboardScreenKt$SettingsContent$3$1$1
-com.stepone.ui.screens.DashboardScreenKt$SettingsContent$3$2
-com.stepone.ui.screens.DashboardScreenKt$SettingsContent$4
-com.stepone.ui.screens.DashboardScreenKt$StatItem$2
-com.stepone.ui.screens.DashboardScreenKt
-com.stepone.ui.theme.ThemeKt$StepOneTheme$1:
-    public final void invoke(androidx.compose.runtime.Composer,int)
-com.stepone.util.AppOpenAdManager$loadAd$1:
-    public static void onAdLoaded()
-com.stepone.util.AppOpenAdManager:
-    public static final int $stable
-    static void <clinit>()
-    public final boolean isAdAvailable()
-    public static void registerActivityLifecycleCallbacks()
-    public static void showAdIfAvailable()
-com.stepone.util.Constants$Milestone:
-    static void <clinit>()
-    public static long getColor-0d7_KjU()
-    public static java.lang.String getName()
-    public static int getSteps()
-com.stepone.util.Constants:
-    public static final int $stable
-    public static final com.stepone.util.Constants INSTANCE
-com.stepone.util.PreferenceManager:
-    public static final int $stable
-    public final androidx.browser.customtabs.CustomTabsIntent masterKey
-    static void <clinit>()
-    public static int getStepGoal()
-    public final boolean isPro()
-    public static void setPro()
-    public static void setStepGoal()
 dagger.hilt.EntryPoints
 dagger.hilt.android.EntryPointAccessors
 dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener:
@@ -61044,12 +61044,10 @@ kotlin.collections.ArrayDeque$Companion:
     public static long wo()
 kotlin.collections.ArrayDeque:
     public static final kotlin.collections.ArrayDeque$Companion Companion
-    public static void addFirst()
     public static void copyElements()
     public final int decremented(int)
     public final int negativeMod(int)
     public final java.lang.Object removeFirstOrNull()
-    public static java.lang.Object removeLast()
 kotlin.collections.ArraysKt
 kotlin.collections.ArraysKt__ArraysJVMKt
 kotlin.collections.ArraysKt__ArraysKt

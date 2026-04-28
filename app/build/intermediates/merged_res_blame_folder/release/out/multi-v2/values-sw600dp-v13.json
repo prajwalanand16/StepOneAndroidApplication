@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeReleaseResources-67:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.prajwal.stepone.app-mergeReleaseResources-67:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/2c5978cda4f8138d19e586ecbe3c9fb3/transformed/jetified-checkout-1.6.33/res/values-sw600dp-v13/values-sw600dp-v13.xml",

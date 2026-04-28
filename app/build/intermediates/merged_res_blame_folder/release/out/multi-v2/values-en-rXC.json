@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeReleaseResources-67:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.prajwal.stepone.app-mergeReleaseResources-67:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/8d2b3ee70626809d10b59559714988fe/transformed/jetified-material3-1.1.2/res/values-en-rXC/values-en-rXC.xml",

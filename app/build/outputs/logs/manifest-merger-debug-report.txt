@@ -206,15 +206,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/praj
 	android:dataExtractionRules
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:14:9-65
 	android:name
-		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:12:9-35
-activity#com.stepone.MainActivity
+		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:12:9-54
+activity#com.prajwal.stepone.MainActivity
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:23:9-31:20
 	android:exported
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:25:13-36
 	android:theme
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:24:13-41
+		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:24:13-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
@@ -225,7 +225,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:29:27-74
-service#com.stepone.service.StepCounterService
+service#com.prajwal.stepone.service.StepCounterService
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:33:9-37:54
 	android:enabled
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:35:13-35
@@ -234,15 +234,15 @@ ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app
 	android:foregroundServiceType
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:37:13-51
 	android:name
-		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:34:13-55
-receiver#com.stepone.receiver.BootReceiver
+		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:34:13-74
+receiver#com.prajwal.stepone.receiver.BootReceiver
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:39:9-46:20
 	android:enabled
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:41:13-35
 	android:exported
 		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:40:13-50
+		ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:40:13-69
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
 ADDED from /Users/prajwalanand/AndroidStudioProjects/Minimalist Step Counter/app/src/main/AndroidManifest.xml:43:13-45:29
 action#android.intent.action.BOOT_COMPLETED
@@ -905,7 +905,7 @@ ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transf
 		ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
@@ -915,7 +915,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /Users/prajwalanand/.gradle/caches/transforms-3/ae005141d4b7a46ffd6623df79dcd879/transformed/core-1.12.0/AndroidManifest.xml:26:22-94

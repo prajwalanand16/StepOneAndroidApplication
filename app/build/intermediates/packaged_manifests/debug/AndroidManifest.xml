@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stepone"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.prajwal.stepone"
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="34" />
+        android:targetSdkVersion="35" />
 
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -71,13 +71,13 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
-        android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.prajwal.stepone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.stepone.StepOneApp"
+        android:name="com.prajwal.stepone.StepOneApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -91,7 +91,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.StepOne" >
         <activity
-            android:name="com.stepone.MainActivity"
+            android:name="com.prajwal.stepone.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.StepOne" >
             <intent-filter>
@@ -102,13 +102,13 @@
         </activity>
 
         <service
-            android:name="com.stepone.service.StepCounterService"
+            android:name="com.prajwal.stepone.service.StepCounterService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="health" />
 
         <receiver
-            android:name="com.stepone.receiver.BootReceiver"
+            android:name="com.prajwal.stepone.receiver.BootReceiver"
             android:enabled="true"
             android:exported="false" >
             <intent-filter>
@@ -118,7 +118,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- Test ID -->
+            android:value="ca-app-pub-7818602725323272~3802076456" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -128,7 +128,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.stepone.mobileadsinitprovider"
+            android:authorities="com.prajwal.stepone.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -210,7 +210,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.stepone.androidx-startup"
+            android:authorities="com.prajwal.stepone.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.stepone.app-mergeReleaseResources-67:/values-es/values-es.xml",
+            "outputFile": "com.prajwal.stepone.app-mergeReleaseResources-67:/values-es/values-es.xml",
             "map": [
                 {
                     "source": "/Users/prajwalanand/.gradle/caches/transforms-3/4916031bfe30264c3d8d6683a4f229b1/transformed/jetified-play-services-wallet-18.1.3/res/values-es/values.xml",

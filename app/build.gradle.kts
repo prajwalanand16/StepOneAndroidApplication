@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    namespace = "com.stepone"
-    compileSdk = 34
+    namespace = "com.prajwal.stepone"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.stepone"
+        applicationId = "com.prajwal.stepone"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 35
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -22,6 +22,14 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../stepone.jks")
+            storePassword = "stepone123"
+            keyAlias = "stepone-alias"
+            keyPassword = "stepone123"
+        }
+    }
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -30,6 +38,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
