@@ -19,6 +19,66 @@ import com.prajwal.stepone.ui.components.Atmosphere
 import com.prajwal.stepone.ui.components.NumberTicker
 import com.prajwal.stepone.util.Constants
 
+import androidx.compose.ui.tooling.preview.Preview
+import com.prajwal.stepone.ui.theme.StepOneTheme
+
+@Preview(showBackground = true, backgroundColor = 0xFF0F172A)
+@Composable
+fun DashboardPreview() {
+    StepOneTheme {
+        DashboardContent(
+            steps = 0,
+            isPro = false,
+            stepGoal = 10000,
+            onRemoveAdsClicked = {},
+            onStepGoalChanged = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, backgroundColor = 0xFF0F172A)
+@Composable
+fun DashboardActivePreview() {
+    StepOneTheme {
+        DashboardContent(
+            steps = 5432,
+            isPro = false,
+            stepGoal = 10000,
+            onRemoveAdsClicked = {},
+            onStepGoalChanged = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, backgroundColor = 0xFF0F172A)
+@Composable
+fun DashboardMilestonePreview() {
+    StepOneTheme {
+        DashboardContent(
+            steps = 12500,
+            isPro = true,
+            stepGoal = 15000,
+            onRemoveAdsClicked = {},
+            onStepGoalChanged = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, backgroundColor = 0xFF1E293B)
+@Composable
+fun SettingsPreview() {
+    StepOneTheme {
+        Surface(color = Color(0xFF1E293B)) {
+            SettingsContent(
+                isPro = false,
+                stepGoal = 8000,
+                onRemoveAdsClicked = {},
+                onStepGoalChanged = {}
+            )
+        }
+    }
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DashboardScreen(
@@ -28,6 +88,24 @@ fun DashboardScreen(
     onStepGoalChanged: (Int) -> Unit = {}
 ) {
     val steps by StepCounterService.stepsFlow.collectAsState()
+    DashboardContent(
+        steps = steps,
+        isPro = isPro,
+        stepGoal = stepGoal,
+        onRemoveAdsClicked = onRemoveAdsClicked,
+        onStepGoalChanged = onStepGoalChanged
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun DashboardContent(
+    steps: Int,
+    isPro: Boolean,
+    stepGoal: Int,
+    onRemoveAdsClicked: () -> Unit,
+    onStepGoalChanged: (Int) -> Unit
+) {
     val milestone = Constants.getMilestoneForSteps(steps)
     val progress = steps.toFloat() / stepGoal
     val animatedProgress by animateFloatAsState(targetValue = progress, label = "ProgressAnimation")
@@ -68,20 +146,6 @@ fun DashboardScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            // Hide simulation button for production. 
-            // It can still be accessed via long-press -> settings if you move it there, 
-            // or just kept commented out.
-            /*
-            val context = androidx.compose.ui.platform.LocalContext.current
-            Button(
-                onClick = { StepCounterService.addSteps(context, 500) },
-                modifier = Modifier.padding(bottom = 16.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White.copy(alpha = 0.1f))
-            ) {
-                Text("Simulate 500 Steps", color = Color.White)
-            }
-            */
-
             Box(contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(
                     progress = 1f,

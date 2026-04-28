@@ -30,6 +30,15 @@ class MainActivity : ComponentActivity(), PaymentResultListener {
     @Inject
     lateinit var preferenceManager: PreferenceManager
 
+    private val permissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        val granted = permissions.entries.all { it.value }
+        if (!granted) {
+            Toast.makeText(this, "Permissions required for step counting", Toast.LENGTH_SHORT).show()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
@@ -105,9 +114,7 @@ class MainActivity : ComponentActivity(), PaymentResultListener {
         }
 
         if (permissions.isNotEmpty()) {
-            registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {}.launch(
-                permissions.toTypedArray()
-            )
+            permissionLauncher.launch(permissions.toTypedArray())
         }
     }
 
