@@ -25,10 +25,8 @@ class AppOpenAdManager @Inject constructor(
     private var currentActivity: Activity? = null
     private var openCount = 0
 
-    // Using Google Test ID for development. 
-    // YOUR ID (ca-pub-7818602725323272) is a Publisher ID. 
-    // App Open Ads require an Ad Unit ID (e.g., ca-app-pub-xxxxxxxx/yyyyyyyy).
-    private val AD_UNIT_ID = "ca-app-pub-3940256099942544/9257395915" 
+    // Production Ad Unit ID
+    private val AD_UNIT_ID = "ca-app-pub-7818602725323272/7845263246"
 
     fun registerActivityLifecycleCallbacks(application: Application) {
         application.registerActivityLifecycleCallbacks(this)

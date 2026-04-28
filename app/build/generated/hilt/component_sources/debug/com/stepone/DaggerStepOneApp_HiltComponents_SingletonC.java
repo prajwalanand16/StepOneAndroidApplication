@@ -15,6 +15,7 @@ import com.stepone.di.DataModule_ProvideDatabaseFactory;
 import com.stepone.di.DataModule_ProvideStepDaoFactory;
 import com.stepone.service.StepCounterService;
 import com.stepone.service.StepCounterService_MembersInjector;
+import com.stepone.util.AppOpenAdManager;
 import com.stepone.util.PreferenceManager;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
@@ -510,6 +511,8 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
 
     private dagger.internal.Provider<PreferenceManager> preferenceManagerProvider;
 
+    private dagger.internal.Provider<AppOpenAdManager> appOpenAdManagerProvider;
+
     private dagger.internal.Provider<StepDatabase> provideDatabaseProvider;
 
     private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
@@ -524,12 +527,14 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
 
     @SuppressWarnings("unchecked")
     private void initialize(final ApplicationContextModule applicationContextModuleParam) {
-      this.preferenceManagerProvider = DoubleCheck.provider(new SwitchingProvider<PreferenceManager>(singletonCImpl, 0));
-      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<StepDatabase>(singletonCImpl, 1));
+      this.preferenceManagerProvider = DoubleCheck.provider(new SwitchingProvider<PreferenceManager>(singletonCImpl, 1));
+      this.appOpenAdManagerProvider = DoubleCheck.provider(new SwitchingProvider<AppOpenAdManager>(singletonCImpl, 0));
+      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<StepDatabase>(singletonCImpl, 2));
     }
 
     @Override
     public void injectStepOneApp(StepOneApp stepOneApp) {
+      injectStepOneApp2(stepOneApp);
     }
 
     @Override
@@ -547,6 +552,12 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
       return new ServiceCBuilder(singletonCImpl);
     }
 
+    @CanIgnoreReturnValue
+    private StepOneApp injectStepOneApp2(StepOneApp instance) {
+      StepOneApp_MembersInjector.injectAppOpenAdManager(instance, appOpenAdManagerProvider.get());
+      return instance;
+    }
+
     private static final class SwitchingProvider<T> implements dagger.internal.Provider<T> {
       private final SingletonCImpl singletonCImpl;
 
@@ -561,10 +572,13 @@ public final class DaggerStepOneApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.stepone.util.PreferenceManager 
+          case 0: // com.stepone.util.AppOpenAdManager 
+          return (T) new AppOpenAdManager(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.preferenceManagerProvider.get());
+
+          case 1: // com.stepone.util.PreferenceManager 
           return (T) new PreferenceManager(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 1: // com.stepone.data.StepDatabase 
+          case 2: // com.stepone.data.StepDatabase 
           return (T) DataModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);
